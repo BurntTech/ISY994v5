@@ -9,6 +9,7 @@ class Device_Dimmer(Device_Base):
         Device_Base.__init__(self, container, "dimmer", name, address)
 
         self.add_property("level", 0)  # in percent
+        self.add_property("power","OFF") #State of Dimmer
 
     def set_level(self, level):
         pass
